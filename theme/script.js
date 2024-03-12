@@ -39,7 +39,7 @@
   
       const themeSwitcherText = document.querySelector("#bd-theme-text");
   
-      const activeThemeIcon = document.querySelector(".theme-icon i"); // main dropdown
+      const activeThemeIcon = document.querySelectorAll(".theme-icon i"); // main dropdown
   
       const btnToActive = document.querySelector(
         `[data-bs-theme-value="${theme}"]`
@@ -55,8 +55,10 @@
   
       btnToActive.classList.add("active");
       btnToActive.setAttribute("aria-pressed", "true");
-      activeThemeIcon.setAttribute("class", svgOfActiveBtn);
-      activeThemeIcon.classList.remove("opacity-50");
+      activeThemeIcon.forEach((element) => {
+        element.setAttribute("class", svgOfActiveBtn)
+        element.classList.remove("opacity-50");
+      })
       const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
       themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
   
