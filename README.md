@@ -2,6 +2,3 @@
 
 
 Bootstrap examples
-
-
-=end
