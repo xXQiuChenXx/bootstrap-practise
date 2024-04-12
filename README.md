@@ -3,5 +3,3 @@
 
 Bootstrap examples
 
-
-== end == 
