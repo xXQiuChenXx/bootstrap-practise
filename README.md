@@ -2,5 +2,4 @@
 
 
 Bootstrap examples
-Some webpages.ges.
-
+Some webpages
