@@ -2,5 +2,4 @@
 
 
 Bootstrap examples
-Some webpages...........
-
+Some webpages...
