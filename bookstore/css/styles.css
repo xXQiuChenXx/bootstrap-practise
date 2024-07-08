@@ -1,58 +1,46 @@
 
-body[data-bs-theme="dark"] .navbar {
+
+[data-bs-theme="dark"] .navbar {
   background-color: #343a40; /* Dark background */
 }
 
-body[data-bs-theme="dark"] .navbar .navbar-brand,
-body[data-bs-theme="dark"] .navbar .nav-link {
+[data-bs-theme="dark"] .navbar .navbar-brand,
+[data-bs-theme="dark"] .navbar .nav-link {
   color: #ffffff; /* White text */
 }
 
-body[data-bs-theme="dark"] .navbar .nav-link:hover {
+[data-bs-theme="dark"] .navbar .nav-link:hover {
   color: #ffc107; /* Gold text on hover */
   background-color: #495057; /* Darker background on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+  border-radius: 8px; /* Rounded corners on hover */
 }
 
-body[data-bs-theme="dark"] .navbar .nav-link.active {
-  border-bottom: 3px solid #ffc107; /* Gold bottom border for active link */
+[data-bs-theme="dark"] .navbar .nav-link.active {
+  border-bottom: 4px solid #ffc107; /* Gold bottom border for active link */
 }
 
-body[data-bs-theme="light"] .navbar {
+[data-bs-theme="light"] .navbar {
   background-color: #f8f9fa; /* Light background */
 }
 
-body[data-bs-theme="light"] .navbar .navbar-brand,
-body[data-bs-theme="light"] .navbar .nav-link {
+[data-bs-theme="light"] .navbar .navbar-brand,
+[data-bs-theme="light"] .navbar .nav-link {
   color: #343a40; /* Dark text */
 }
 
-body[data-bs-theme="light"] .navbar .nav-link:hover {
-  color: #ffc107; /* Gold text on hover */
-  background-color: #e2e6ea; /* Lighter background on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+[data-bs-theme="light"] .navbar .nav-link:hover {
+  color: black; /* Gold text on hover */
+  background-color: #E1EBEE; /* Lighter background on hover */
+  border-radius: 8px; /* Rounded corners on hover */
+  font-weight: 600;
 }
 
-body[data-bs-theme="light"] .navbar .nav-link.active {
-  border-bottom: 3px solid #343a40; /* Dark bottom border for active link */
+[data-bs-theme="light"] .navbar .nav-link.active {
+  border-bottom: 4px solid #343a40; /* Dark bottom border for active link */
 }
 
 .navbar .nav-item {
-  margin: 0 10px; /* Horizontal margin between items */
-}
-
-.navbar .nav-link {
-  padding: 10px 20px; /* Padding for better click area */
-  font-family: "Arial", sans-serif; /* Custom font */
-  text-transform: uppercase; /* Uppercase text */
-}
-
-.theme-switch {
-  display: flex;
-  align-items: center;
-}
-
-.theme-switch input {
-  margin-left: 10px;
-}
+  margin: 0 5px;
+  padding: 0 5px;
+  font-weight: 500;
 }
