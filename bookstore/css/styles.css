@@ -1,4 +1,6 @@
-
+* {
+  font-weight: 500;
+}
 
 [data-bs-theme="dark"] .navbar {
   background-color: #343a40; /* Dark background */
@@ -42,5 +44,8 @@
 .navbar .nav-item {
   margin: 0 5px;
   padding: 0 5px;
-  font-weight: 500;
+}
+
+.navbar .nav-item a {
+  padding: 5px 10px;
 }
