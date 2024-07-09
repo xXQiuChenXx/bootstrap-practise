@@ -49,3 +49,10 @@
 .navbar .nav-item a {
   padding: 5px 10px;
 }
+
+.carousel-item {
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
