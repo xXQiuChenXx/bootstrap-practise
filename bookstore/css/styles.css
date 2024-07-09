@@ -32,7 +32,7 @@
 
 [data-bs-theme="light"] .navbar .nav-link:hover {
   color: black; /* Gold text on hover */
-  background-color: #E1EBEE; /* Lighter background on hover */
+  background-color: #e1ebee; /* Lighter background on hover */
   border-radius: 8px; /* Rounded corners on hover */
   font-weight: 600;
 }
@@ -48,11 +48,4 @@
 
 .navbar .nav-item a {
   padding: 5px 10px;
-}
-
-.carousel-item {
-  display: none;
-}
-.carousel-item.active {
-  display: block;
 }
