@@ -144,6 +144,7 @@ const swiperr = new Swiper("#list-new", {
   },
   grabCursor: true,
   slidesPerView: 5,
+  spaceBetween: 50,
   breakpoints: {
     790: {
       slidesPerView: "auto"
