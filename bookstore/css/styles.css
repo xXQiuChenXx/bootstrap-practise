@@ -49,3 +49,21 @@
 .navbar .nav-item a {
   padding: 5px 10px;
 }
+
+.swiper {
+  height: 350px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 550px;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  height: 90%;
+}
