@@ -167,7 +167,7 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
   centeredSlides: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   coverflowEffect: {
     rotate: 5,
     scale: 1,
@@ -175,5 +175,14 @@ const swiper = new Swiper(".swiper", {
     depth: 300,
     modifier: 1,
     slideShadows: true,
+  },
+  breakpoints: {
+    790: {
+      slidesPerView: "auto"
+    },
+    991: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
   },
 });
