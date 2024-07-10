@@ -91,6 +91,11 @@
 (function ($) {
   $(function () {
     var jcarousel = $(".jcarousel");
+    jcarousel.jcarousel().jcarouselAutoscroll({
+      interval: 5000, // 5 seconds
+      target: "+=1",
+      autostart: true,
+    });
 
     jcarousel
       .on("jcarousel:reload jcarousel:create", function () {
@@ -135,3 +140,40 @@
       });
   });
 })(jQuery);
+
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  effect: "coverflow",
+  slidesPerView: "auto",
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  centeredSlides: true,
+  slidesPerView: 2,
+  coverflowEffect: {
+    rotate: 5,
+    scale: 1,
+    stretch: 50,
+    depth: 300,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
