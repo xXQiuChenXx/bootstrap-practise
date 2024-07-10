@@ -14,9 +14,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/jcarousel.css" />
-    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary shadow navbar-custom">
@@ -145,67 +148,30 @@
 
     <div class="container mt-4">
       <section>
-        <div class="wrapper">
-          <h1>Most Popular</h1>
+        <h1>Most Popular</h1>
+        <p>
+          This example shows how to implement a responsive carousel. Resize the
+          browser window to see the effect.
+        </p>
 
-          <p>
-            This example shows how to implement a responsive carousel. Resize
-            the browser window to see the effect.
-          </p>
-
-          <div class="jcarousel-wrapper">
-            <div class="jcarousel">
-              <ul>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 1"
-                    style="height: 400px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 2"
-                    style="height: 400px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 3"
-                    style="height: 400px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 4"
-                    style="height: 400px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 5"
-                    style="height: 400px"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="./img/demo.png"
-                    alt="Image 6"
-                    style="height: 400px"
-                  />
-                </li>
-              </ul>
+        <div class="swiper w-full mt-4">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./img/demo.png" alt="Image 4" style="aspect-ratio: 16/9;" />
             </div>
-
-            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
-            <p class="jcarousel-pagination"></p>
+            <div class="swiper-slide"><img src="./img/demo2.jpg" alt="Image 5" /></div>
+            
+            <div class="swiper-slide"><img src="./img/demo3.jpg" alt="Image 6" /></div>
+            ...
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
 
@@ -243,12 +209,11 @@
         </ul>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.9/jquery.jcarousel.min.js"
-      integrity="sha512-5TU8T3STShZiLsdqDqiKnj0Z72ccPZpIDCuItxc2S7G3lyiwqiuLuDFVNsLQ7Hgu5f33DlZ2KAJspbn6NAXqnA=="
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
