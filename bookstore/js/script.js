@@ -88,64 +88,10 @@
   });
 })();
 
-(function ($) {
-  $(function () {
-    var jcarousel = $(".jcarousel");
-    jcarousel.jcarousel().jcarouselAutoscroll({
-      interval: 5000, // 5 seconds
-      target: "+=1",
-      autostart: true,
-    });
-
-    jcarousel
-      .on("jcarousel:reload jcarousel:create", function () {
-        var carousel = $(this),
-          width = carousel.innerWidth();
-
-        if (width >= 600) {
-          width = width / 2;
-        } else if (width >= 350) {
-          width = width / 1;
-        }
-
-        carousel.jcarousel("items").css("width", Math.ceil(width) + "px");
-      })
-      .jcarousel({
-        wrap: "circular",
-      });
-
-    $(".jcarousel-control-prev").jcarouselControl({
-      target: "-=1",
-    });
-
-    $(".jcarousel-control-next").jcarouselControl({
-      target: "+=1",
-    });
-
-    $(".jcarousel-pagination")
-      .on("jcarouselpagination:active", "a", function () {
-        $(this).addClass("active");
-      })
-      .on("jcarouselpagination:inactive", "a", function () {
-        $(this).removeClass("active");
-      })
-      .on("click", function (e) {
-        e.preventDefault();
-      })
-      .jcarouselPagination({
-        perPage: 1,
-        item: function (page) {
-          return '<a href="#' + page + '">' + page + "</a>";
-        },
-      });
-  });
-})(jQuery);
-
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper("#hero", {
   direction: "horizontal",
   loop: true,
   effect: "coverflow",
-  slidesPerView: "auto",
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -183,6 +129,28 @@ const swiper = new Swiper(".swiper", {
     991: {
       slidesPerView: 2,
       spaceBetween: 20,
+    },
+  },
+});
+const swiperr = new Swiper("#list-new", {
+  direction: "horizontal",
+  pagination: {
+    el: ".swiperr-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  grabCursor: true,
+  slidesPerView: 5,
+  breakpoints: {
+    790: {
+      slidesPerView: "auto"
+    },
+    991: {
+      slidesPerView: 5,
+      spaceBetween: 30,
     },
   },
 });
