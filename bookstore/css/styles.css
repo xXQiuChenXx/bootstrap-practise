@@ -79,7 +79,6 @@
   object-fit: cover;
 }
 
-
 @media (max-width: 1200px) {
   .swiper {
     height: 300px;
@@ -99,7 +98,6 @@
   }
 }
 
-
 .swiper-list {
   height: 410px;
 }
@@ -111,4 +109,18 @@
 
 .book-frame img {
   object-fit: contain;
+  box-shadow: -8px 8px 4px -1px #00000040;
+}
+
+.mh-full {
+  min-height: 100%;
+  border-radius: 15px;
+}
+.book-frame .inner { 
+  width: 65%;
+  margin-top: 15px;
+  max-height: 10px !important;
+  margin-left: auto;
+  margin-right: auto;
+  
 }

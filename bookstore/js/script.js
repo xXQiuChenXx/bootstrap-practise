@@ -139,15 +139,16 @@ const swiperr = new Swiper("#list", {
     prevEl: ".swiper-button-prev",
   },
   grabCursor: true,
-  slidesPerView: 5,
-  spaceBetween: 40,
-  // breakpoints: {
-  //   790: {
-  //     slidesPerView: "auto"
-  //   },
-  //   991: {
-  //     slidesPerView: 5,
-  //     spaceBetween: 30,
-  //   },
-  // },
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    790: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    991: {
+      slidesPerView: 5,
+      spaceBetween: 40,
+    },
+  },
 });
