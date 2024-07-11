@@ -138,7 +138,7 @@ const swiperr = new Swiper("#list", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  grabCursor: true,
+  // grabCursor: true,
   slidesPerView: 2,
   spaceBetween: 10,
   breakpoints: {
