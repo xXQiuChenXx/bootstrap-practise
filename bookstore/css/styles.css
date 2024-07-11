@@ -101,9 +101,10 @@
 
 
 .swiper-list {
-  height: 500px;
+  height: 410px;
 }
 
-.book {
-  height: 240px !important;
+.book-frame {
+  height: 250px !important;
+  overflow: hidden;
 }
