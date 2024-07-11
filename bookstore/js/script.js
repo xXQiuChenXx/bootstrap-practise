@@ -132,26 +132,22 @@ const swiper = new Swiper("#hero", {
     },
   },
 });
-const swiperr = new Swiper("#list-new", {
+const swiperr = new Swiper("#list", {
   direction: "horizontal",
-  pagination: {
-    el: ".swiperr-pagination",
-    clickable: true,
-  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   grabCursor: true,
   slidesPerView: 5,
-  spaceBetween: 50,
-  breakpoints: {
-    790: {
-      slidesPerView: "auto"
-    },
-    991: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
-  },
+  spaceBetween: 40,
+  // breakpoints: {
+  //   790: {
+  //     slidesPerView: "auto"
+  //   },
+  //   991: {
+  //     slidesPerView: 5,
+  //     spaceBetween: 30,
+  //   },
+  // },
 });
