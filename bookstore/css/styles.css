@@ -108,3 +108,7 @@
   height: 250px !important;
   overflow: hidden;
 }
+
+.book-frame img {
+  object-fit: contain;
+}
