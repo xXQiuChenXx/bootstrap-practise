@@ -135,7 +135,7 @@
           <a class="nav-item" href="/login">
             <button
               type="button"
-              class="btn btn-outline-primary py-1 fw-semibold"
+              class="btn btn-outline-warning py-1 fw-semibold"
             >
               Login
             </button>
@@ -145,22 +145,39 @@
     </nav>
     <div class="container my-5">
       <div>
-        <h2>Search</h2>
-        <div class="flex w-80">
+        <h2 class="text-center py-5 display-5 text-shadow fw-bold">Welcome, Search For The Book That You Like</h2>
+        <div class="d-flex gap-4 w-75 mx-auto py-3">
           <input
             type="text"
-            class="form-control inline"
+            class="form-control flex-fill w-75 py-2 shadow"
             placeholder="Search for books..."
             aria-label="search"
             aria-describedby="button-addon2"
           />
           <button
-            class="btn btn-outline-secondary inline"
+            class="btn btn-outline-primary flex-fill shadow"
             type="button"
             id="button-addon2"
           >
             Search
           </button>
+        </div>
+        <div>
+          <h3 class="fw-bold mt-3">Search Result (10): </h3>
+          <div class="row mt-4">
+            <div class="col-12 col-md-6 col-lg-3 mx-auto">
+                <div class="box">Column 1</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box">Column 2</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box" style="background-color: green;">Column 3</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box" style="background-color: green;">Column 4</div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
