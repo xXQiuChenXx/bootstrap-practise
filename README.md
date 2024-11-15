@@ -3,4 +3,4 @@ d!# Bootstrap CSS Practice
 
 Bootstrap examples
 Some webpages.
-For font-end on
+For font-end only
